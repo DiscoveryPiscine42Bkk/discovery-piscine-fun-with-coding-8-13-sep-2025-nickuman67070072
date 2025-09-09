@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </center>
+        <title>Piscine Web</title>
+    </center>
+</head>
+<body>
+    <center>
+        <h1>Piscine Web</h1>
+    </center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="รูปแมว" width="300">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" 
+     alt="รูปแมว" 
+     width="300">
+</body>
+</html>
