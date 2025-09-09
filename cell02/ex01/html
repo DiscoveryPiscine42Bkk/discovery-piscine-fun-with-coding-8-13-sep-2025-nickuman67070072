@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple SNCF Dropdown Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>SNCF Simple Dropdown Menu</h1>
+
+  <nav class="menu">
+    <ul>
+      <li>
+        <a href="#">Ham</a>
+        <ul class="dropdown">
+          <li><a href="#">Paris ham</a></li>
+          <li><a href="#">Smoked ham</a></li>
+          <li><a href="#">Turkey slice</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Cheese</a>
+        <ul class="dropdown">
+          <li><a href="#">Hard Cheese</a></li>
+          <li><a href="#">Soft Cheese</a></li>
+          <li><a href="#">Sweet Cheese</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Extras</a>
+        <ul class="dropdown">
+          <li><a href="#">Lettuce & Tomato</a></li>
+          <li><a href="#">Pickles</a></li>
+          <li><a href="#">Butter</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
