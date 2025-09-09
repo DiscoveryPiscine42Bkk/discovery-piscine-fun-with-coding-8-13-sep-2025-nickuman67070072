@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Two Cells Table</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;   /* กว้างเต็มจอ */
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .first {
+      background-color: #c9cc82; /* สีเขียวอ่อน */
+    }
+    .second {
+      background-color: #f4c5b6; /* สีส้มอ่อน */
+    }
+
+    /* ทำให้ responsive: ถ้าจอกว้างน้อยกว่า 600px ให้เรียงเป็น 2 แถว */
+    @media (max-width: 600px) {
+      table, tr, td {
+        display: block;
+        width: 100%;
+      }
+      td {
+        box-sizing: border-box;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p style="text-align:center;">Make a web page with a table of two boxes like:</p>
+  <hr>
+  <table>
+    <tr>
+      <td class="first">First cell</td>
+      <td class="second">Second cell</td>
+    </tr>
+  </table>
+</body>
+</html>
