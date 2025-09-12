@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Page</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    .parallax {
+      height: 100vh; /* Full viewport height */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .black-block {
+      background-color: black;
+      color: white;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="parallax" style="background-image: url('https://picsum.photos/id/1015/1920/1080');">
+    Welcome to my page!
+  </div>
+
+  <div class="black-block">
+    This is a black block message
+  </div>
+
+  <div class="parallax" style="background-image: url('https://picsum.photos/id/1016/1920/1080');">
+    End of the page message
+  </div>
+
+</body>
+</html>
