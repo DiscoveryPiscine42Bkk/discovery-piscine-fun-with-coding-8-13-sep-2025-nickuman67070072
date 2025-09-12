@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F5EEDC] text-gray-800 scroll-smooth">
+
+  <nav class="bg-[#F5EEDC] shadow-md fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="text-2xl font-bold">Best Sleep always</div>
+      <div>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-blue-500 font-bold">About</a></li>
+          <li><a href="#showcase" class="hover:text-blue-500 font-bold">Showcase</a></li>
+          <li><a href="#contact" class="hover:text-blue-500 font-bold">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+  <section class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-[#27548A] to-[#183B4E] text-white">
+    <h1 class="text-5xl font-bold mb-4">Hello, I'm BEST</h1>
+    <p class="text-xl">Welcome to my portfolio website</p>
+  </section>
+
+  <section id="about" class="py-20 bg-[#F5EEDC]">
+    <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+
+      <div class="flex-shrink-0">
+        <img src="Screenshot_20250911_234632_Gallery-removebg-preview.png" class="w-40 sm:w-48 md:w-60 h-auto">
+      </div>
+
+      <div class="max-w-md text-center md:text-left">
+        <p class="text-gray-700 text-lg mb-6">
+          I'm a 2nd-year IT student passionate about sleeping, relaxing, and playing in projects. I love to sleep very much and the burden of team work.
+        </p>
+
+        <div class="space-y-5">
+
+          <div class="flex items-center space-x-4 w-72">
+            <a>
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" class="w-8 h-8 hover:opacity-80">
+            </a>
+            <div class="flex-1 bg-gray-300 rounded-full h-6 overflow-hidden relative">
+              <div class="bg-[#4caf50] h-6" style="width: 10%;"></div>
+              <span class="absolute right-2 top-0 h-full flex items-center text-white font-bold">10%</span>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4 w-72">
+            <a>
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" 
+                  class="w-8 h-8 hover:opacity-80">
+            </a>
+            <div class="flex-1 bg-gray-300 rounded-full h-6 overflow-hidden relative">
+              <div class="bg-blue-700 h-6" style="width: 5%;"></div>
+              <span class="absolute right-2 top-0 h-full flex items-center text-white font-bold">5%</span>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4 w-72">
+            <a>
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" 
+                  class="w-8 h-8 hover:opacity-80">
+            </a>
+            <div class="flex-1 bg-gray-300 rounded-full h-6 overflow-hidden relative">
+              <div class="bg-yellow-500 h-6" style="width: 0.5%;"></div>
+              <span class="absolute right-2 top-0 h-full flex items-center text-white font-bold">0.5%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="showcase" class="py-20 bg-[#DDA853]">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <h2 class="text-4xl font-bold text-center mb-12">My Sleep</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div onclick="openModal('project1')" class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+          <img src="bimage.jpg" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">ถ้าเธออยากฝันดี แนะนำให้ฝันถึงเรา</h3>
+            <p class="text-gray-600">ฝันดีก็สำคัญ แต่ถ้าฝันถึงกันมันคงจะดี</p>
+          </div>
+        </div>
+
+        <div onclick="openModal('project2')" class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+          <img src="bimage5.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">กำลังตั้งใจฟังอยู่</h3>
+            <p class="text-gray-600">หน้าตาอาจดูไม่ละมุน แต่ใส่ใจคุณยิ่งกว่าป้าข้างบ้านแน่นอน</p>
+          </div>
+        </div>
+        
+        <div onclick="openModal('project3')" class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+          <img src="bimage3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">นักดนตรีผู้เหงาหงอย</h3>
+            <p class="text-gray-600">เพลงอาจมีหลายคีย์ แต่นักดนตรีอย่างพี่ไม่มีหลายใจ</p>
+          </div>
+        </div>
+        <div onclick="openModal('project4')" class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+          <img src="bimage4.jpg" alt="Project 4" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">matrix มันยาก นอนดีกว่า</h3>
+            <p class="text-gray-600">Description of the project goes here.</p>
+          </div>
+        </div>
+
+        <div onclick="openModal('project5')" class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+          <img src="bimage7.jpg" alt="Project 5" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">ไม่ได้หลับแค่หลี่ตา</h3>
+            <p class="text-gray-600">ข้าวมันไก่ หรือจะสู้ ข้าวมาใกล้ๆ หน่อยอยากกอด</p>
+          </div>
+        </div>
+        
+        <div onclick="openModal('project6')" class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+          <img src="bimage8.jpg" alt="Project 6" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl mb-2">ชินจังก็สนุกเหมือนกันนะเนี้ย</h3>
+            <p class="text-gray-600">ที่ชอบใส่เสื้อฟิต เพราะอยากให้รู้ว่าผมชอบคับ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-[#F5EEDC]">
+    <div class="container mx-auto px-6 max-w-4xl text-center">
+      <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+      <p class="text-gray-700 mb-6">You can contact me email or discord.(อาจจะไม่มี เอาไอจีไปก่อน)</p>
+    </div>
+    <div class="flex justify-center">
+      <a href="https://www.instagram.com/khnphathrsunaaphanth">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-10 h-10 hover:opacity-80">
+      </a>
+    </div>
+  </section>
+
+  <div id="project1" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl p-6 relative">
+      <button onclick="closeModal('project1')" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl">&times;</button>
+      <h2 class="text-2xl font-bold mb-4">ถ้าเธออยากฝันดี แนะนำให้ฝันถึงเรา</h2>
+      <img src="bimage.jpg" alt="Project 3" class="w-full h-auto object-cover mb-4">
+      <p class="text-gray-700">ฝันดีก็สำคัญ แต่ถ้าฝันถึงกันมันคงจะดี</p>
+    </div>
+  </div>
+
+  <div id="project2" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl p-6 relative">
+      <button onclick="closeModal('project2')" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl">&times;</button>
+      <h2 class="text-2xl font-bold mb-4">กำลังตั้งใจฟังอยู่</h2>
+      <img src="bimage5.jpg" alt="Project 3" class="w-full h-auto object-cover mb-4">
+      <p class="text-gray-700">หน้าตาอาจดูไม่ละมุน แต่ใส่ใจคุณยิ่งกว่าป้าข้างบ้านแน่นอน</p>
+    </div>
+  </div>
+
+  <div id="project3" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl p-6 relative">
+      <button onclick="closeModal('project3')" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl">&times;</button>
+      <h2 class="text-2xl font-bold mb-4">นักดนตรีผู้เหงาหงอย</h2>
+      <img src="bimage3.jpg" alt="Project 3" class="w-full h-auto object-cover mb-4">
+      <p class="text-gray-700">"เพลงอาจมีหลายคีย์ แต่นักดนตรีอย่างพี่ไม่มีหลายใจ"</p>
+    </div>
+  </div>
+  <div id="project4" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl p-6 relative">
+      <button onclick="closeModal('project4')" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl">&times;</button>
+      <h2 class="text-2xl font-bold mb-4">matrix มันยาก นอนดีกว่า</h2>
+      <img src="bimage4.jpg" alt="Project 3" class="w-full h-auto object-cover mb-4">
+      <p class="text-gray-700">ถ้าจะบอกเกี่ยวกับเมทริกซ์ คงต้องบอก"ดีเทอร์มินันต์"แต่ถ้าจะบอกเกี่ยวกับรักของเรา คงต้องบอก"ดี(ที่)เธอมีฉัน"</p>
+    </div>
+  </div>
+
+  <div id="project5" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl p-6 relative">
+      <button onclick="closeModal('project5')" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl">&times;</button>
+      <h2 class="text-2xl font-bold mb-4">ไม่ได้หลับแค่หลี่ตา</h2>
+      <img src="bimage7.jpg" alt="Project 3" class="w-full h-auto object-cover mb-4">
+      <p class="text-gray-700">ข้าวมันไก่ หรือจะสู้ ข้าวมาใกล้ๆ หน่อยอยากกอด</p>
+    </div>
+  </div>
+
+  <div id="project6" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl p-6 relative">
+      <button onclick="closeModal('project6')" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl">&times;</button>
+      <h2 class="text-2xl font-bold mb-4">ชินจังก็สนุกเหมือนกันนะเนี้ย</h2>
+      <img src="bimage8.jpg" alt="Project 3" class="w-full h-auto object-cover mb-4">
+      <p class="text-gray-700">ที่ชอบใส่เสื้อฟิต เพราะอยากให้รู้ว่าผมชอบคับ.</p>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.remove("hidden");
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add("hidden");
+    }
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
